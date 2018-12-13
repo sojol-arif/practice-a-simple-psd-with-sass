@@ -1,0 +1,35 @@
+// Mixins
+// Background Cover Mixin
+
+/*@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+@mixin transition-background{
+  -webkit-transiton: background .3s ease-in-out;
+  -moz-transiton: background .3s ease-in-out;
+  -o-transiton: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+@mixin transition-btn{
+  -webkit-transiton: .3s ease-in-out;
+  -moz-transiton: .3s ease-in-out;
+  -o-transiton: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+// Font Mixins
+/*@mixin serif-font {
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}*/
+/*@mixin script-font {
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}*/
+@mixin body-font {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*@mixin heading-font {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}*/

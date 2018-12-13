@@ -1,0 +1,101 @@
+// Styling for the navbar and banner
+header{
+  .heading-part{
+    background-color:#290000;
+    border-top:5px solid #76c38f;
+    height:600px;
+    nav{
+      margin-top:37px;
+      a.navbar-brand{
+        color:$white;
+        font-size:28px;
+        span{
+          font-size:11px;
+          color:$text-color-2nd;
+          display:block;
+          margin-top:-11px;
+        }
+      }
+      ul{
+        li{
+          a{
+            border-radius:10px;
+            color:$white;
+            padding:12px 18px !important;
+            display:inline-block;
+            margin-left:1px;
+            @include transition-btn;
+            &:hover,
+            &.active{
+              background-color:$primary;
+            
+            }
+          }
+        }
+      }
+    }
+
+   /* Slick slider */
+    .SlickLongSlider{
+      position: relative;
+      margin-top:11px;
+      .sliderDFlex{
+          display: flex !important;display: -webkit-flex !important; align-content: center !important; align-items: center !important;justify-content: space-around;
+
+        .sliderImg{
+        
+        }
+        .sliderText{
+          .bannerHeading,
+          .bannerText{
+            width: 320px;
+          }
+          .bannerHeading{
+            font-size:46px;
+            color:$white;
+            line-height: 1;
+            margin-bottom:25px;
+          }
+          .bannerText{
+            font-size:12px;
+            color:$text-color-2nd;
+          }
+          button.sliderBtn{
+            background-color:$primary;
+            color:$white;
+            border-radius:10px;
+          }
+        }
+      }
+    }
+    .leftA,
+    .rightA{
+      position: absolute;
+      top:50%;
+      width: 17px;
+      height:28px;
+      outline: none;
+      border:none;
+      cursor: pointer;
+      transition:.35s;
+      -webkit-transition: .35s;
+      top:50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      border: none;
+    }
+    .leftA{
+      left:0;
+      background: url(../images/left-arrow.png) no-repeat;
+    }
+    .rightA{
+      right:0;
+      background: url(../images/right-arrow.png) no-repeat;
+    }
+    .leftA:hover, .rightA:hover {opacity:.5;}
+    .leftA:focus, .rightA:focus {
+      outline:none;
+      border:none;          
+    }
+  }
+}

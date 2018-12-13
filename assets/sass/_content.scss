@@ -1,0 +1,109 @@
+// Styling for the content or middle bar
+
+#content{
+    padding-bottom:44px;
+    background-color:#660000;
+    z-index: -2;
+    .content-inner{
+        .content-upper{
+            padding:58px 0 42px;
+            .upper-single-box{
+                cursor: pointer;
+                padding:20px 30px;
+                background-color:$white;
+                text-align:center;
+                @include transition-background;
+                &:hover{
+                    background-color:$primary;
+                    color:$white;
+                    .image-box{
+                        background-color:$white;
+                        color:$box-color-and-text-color;
+                    }
+                    h3,
+                    p{
+                        color:$white;
+                    }
+                }
+                .image-box{
+                    width:120px;
+                    height:120px;
+                    background-color:$box-color-and-text-color;
+                    color:$white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin:0 auto;
+                }
+                h3{
+                    color:$box-color-and-text-color;
+                    font-weight: normal;
+                    margin-top:14px;
+                }
+                p{
+                    color: $text-color-2nd;
+                    margin-bottom:0;
+                }
+            }
+        }
+        .content-lower{
+            .latest-text{
+                text-align: center;
+                position: relative;
+                .latest-work-text{
+                    background-color:#303030;
+                    padding:12px;
+                    font-size:32px;
+                    color:$white;
+                    display: inline-block;
+                    border-radius: 10px;
+                    position: relative;
+                    z-index: 2;
+                }
+                &:after{
+                    content:"";
+                    position: absolute;
+                    width:100%;
+                    height:4px;
+                    background-color:#303030;
+                    top:50%;
+                    left:0;
+                    z-index: 1;
+                }
+            }
+            .single-work{
+                border:5px solid $white;
+                margin-top:28px;
+                margin-bottom:14px;
+                position: relative;
+                width: 290px;
+                height: 190px;
+                background-color:#353535;
+                font-size:18px;
+                color:$white;
+                text-align:center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include transition-background;
+                cursor: pointer;
+                &:hover{
+                    background-color:#353535;
+                    border:5px solid #76c38f;
+                    .single-work-text{
+                        display: none;
+                    }
+                }
+                .single-work-text{
+                    position: absolute;
+                    font-size:14px;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    background:#151515;
+                    padding:5px 0;
+                }
+            }
+        }
+    }
+}

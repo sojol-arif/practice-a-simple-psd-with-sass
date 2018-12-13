@@ -1,0 +1,115 @@
+// Style for the footer
+
+footer{
+    .footer-top{
+        background-color:#303030;
+        border-bottom:1px solid #000;
+        padding-bottom:40px;
+        .footer-heading{
+           color:$white;
+           padding-top:40px;
+           padding-bottom:20px;
+           font-size:16px;
+        }
+        .post-title{
+            color:$primary;
+            margin-top:0;
+            padding-top:0;
+            font-size:13px;
+            line-height: 2.5;
+        }
+        .admin-text{
+            color:$primary;
+            font-size:10px;
+            line-height: 2;
+        }
+        .dayAndDate{
+            color:$text-color-2nd;
+            font-size:10px;
+        }
+        p{
+            padding-top:5px;
+            color:$text-color-2nd;
+            font-size:13px;
+            line-height: 1.75;
+        }
+        a{
+            font-size:13px;
+            color:$primary;
+        }
+
+        /* 2nd column */
+        .link-text{
+            a{
+                color:$primary;
+                display: block;
+                font-size:13px;
+                padding-bottom:6px;
+                margin-top:8px;
+                border-bottom:2px solid #404040;
+                &::before{
+                    content:">";
+                    padding-right:5px;
+                    color:$text-color-2nd;
+                }
+            }
+        }
+
+        /* 3rd column */
+        .footer-3rd-col{
+            font-size: 13px;
+            line-height: 2;
+            span{
+                color:$primary;
+            }
+        }
+
+        /* 4th column */
+        .footer-4th-col{
+            .form-group{
+                margin-bottom:10px !important;
+            }
+            input{
+                background-color:#222222;
+                color:#989898;
+                border:none;
+                padding:12px;
+                border-radius: 10px;
+            }
+            button{
+                color:#303030;
+                background-color:$primary;
+                @include transition-btn;
+                border:none;
+                padding:12px;
+                border-radius: 10px;
+                padding-left:12px;
+            }
+        }
+    }
+    .footer-bottom{
+        border-top:1px solid #3a3a3a;
+        background-color:#2b2b2b;
+        height:60px;
+        display: flex;
+        align-items: center;
+        position: relative;
+/*         &:after{
+            border-top:1px solid red;
+            position: absolute;
+            top:0;
+            left:0;
+        } */
+        .left-text,
+        .Right-text{
+            color:$text-color-2nd;
+            font-size: 13px;
+        }
+        .left-text{
+            float:left;
+        }
+        .Right-text{
+            float:right;
+        }
+    }
+}
